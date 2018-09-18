@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="itp341.liu.peixuan.finalproject.app.Fragment.WelcomeFragment">
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/loadingPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center" >
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/welcome_logo"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/logo"
+        android:layout_marginBottom="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Email"
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:id="@+id/editText_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Password"
+            android:textColor="@color/black"
+            android:textSize="20dp"/>
+        <EditText
+            android:layout_marginLeft="10dp"
+            android:id="@+id/editText_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_margin="4dp"
+            android:background="@android:color/holo_green_light"
+            android:layout_marginRight="10dp"
+            android:id="@+id/button_Login"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Log_in"/>
+        <Button
+            android:layout_margin="4dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:background="@android:color/holo_green_light"
+            android:id="@+id/button_Signup"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Sign_up"/>
+    </LinearLayout>
+
+
+</LinearLayout>

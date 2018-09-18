@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="status">
+        <item>Good</item>
+        <item>Need water</item>
+        <item>Need sunlight</item>
+        <item>Need fertilizer</item>
+        <item>Need pest control</item>
+        <item>Need weeding</item>
+        <item>Need harvest</item>
+        <item>Other</item>
+    </string-array>
+</resources>
